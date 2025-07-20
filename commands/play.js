@@ -30,7 +30,7 @@ async function playCommand(sock, chatId, message) {
         const urlYt = video.url;
 
         // Fetch audio data from API
-        const response = await axios.get(`https://apis-keith.vercel.app/download/dlmp3?url=${urlYt}`);
+        const response = await axios.get(`https://apis.davidcyriltech.my.id/download/ytmp4?url=${urlYt}`);
         const data = response.data;
 
         if (!data || !data.status || !data.result || !data.result.downloadUrl) {
@@ -59,5 +59,5 @@ async function playCommand(sock, chatId, message) {
 
 module.exports = playCommand; 
 
-/*Powered b𝘆 𝗦𝗡𝗢𝗪𝗕𝗜𝗥𝗗*
-*Credits to 𝗦𝗡𝗢𝗪𝗕𝗜𝗥𝗗*`*/
+/*Powered by KNIGHT-BOT*
+*Credits to Keith MD*`*/
